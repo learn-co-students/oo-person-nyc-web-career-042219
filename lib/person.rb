@@ -60,22 +60,22 @@ class Person
 
   def take_bath
     self.hygiene += 4
-    self.limit
+    # self.limit
     "♪ Rub-a-dub just relaxing in the tub ♫"
   end
 
   def work_out
     self.happiness += 2
     self.hygiene -= 3
-    self.limit
+    # self.limit
     "♪ another one bites the dust ♫"
   end
 
   def call_friend(person)
     self.happiness += 3
     person.happiness +=3
-    self.limit
-    person.limit
+    # self.limit
+    # person.limit
     "Hi #{person.name}! It's #{self.name}. How are you?"
   end
 
@@ -83,14 +83,14 @@ class Person
     if topic == "politics"
       self.happiness -= 2
       person.happiness -= 2
-     self.limit
-      person.limit
+    # self.limit
+    #   person.limit
       return "blah blah partisan blah lobbyist"
     elsif topic == "weather"
       self.happiness += 1
       person.happiness += 1
-      self.limit
-      person.limit
+      # self.limit
+      # person.limit
       return "blah blah sun blah rain"
     else
       return "blah blah blah blah blah"
