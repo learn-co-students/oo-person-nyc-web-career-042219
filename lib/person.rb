@@ -31,19 +31,19 @@ class Person
     end
   end
   
-  def limit
-    if self.happiness > 10
-      self.happiness = 10
-    elsif self.happiness < 0
-      self.happiness = 0
-    end
+  # def limit
+  #   if self.happiness > 10
+  #     self.happiness = 10
+  #   elsif self.happiness < 0
+  #     self.happiness = 0
+  #   end
   
-    if self.hygiene > 10
-      self.hygiene = 10
-    elsif self.hygiene < 0
-      self.hygiene = 0
-    end
-  end
+  #   if self.hygiene > 10
+  #     self.hygiene = 10
+  #   elsif self.hygiene < 0
+  #     self.hygiene = 0
+  #   end
+  # end
 
   def clean?
     self.hygiene > 7
